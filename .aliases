@@ -8,3 +8,5 @@ function remove_recursive() {
   find . -name $1 -type f -print -delete
 }
 alias rmr=remove_recursive
+
+alias vscode='code-server --cert=$HOME/quantum/cdr/MyCertificate.crt --cert-key=$HOME/quantum/cdr/MyKey.key'
