@@ -1,0 +1,10 @@
+alias quit='osascript -e "do shell script \"osascript -e \\\"tell application \\\\\\\"Terminal\\\\\\\" to quit\\\" &> /dev/null &\""; exit'
+
+alias tj='ssh tj'
+
+alias dockerrun='sudo open /Applications/Docker.app'
+
+function remove_recursive() {
+  find . -name $1 -type f -print -delete
+}
+alias rmr=remove_recursive

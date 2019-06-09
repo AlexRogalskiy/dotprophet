@@ -1,0 +1,2 @@
+marzocchi/zsh-notify
+zsh-users/zsh-syntax-highlighting
