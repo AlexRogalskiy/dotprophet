@@ -10,7 +10,7 @@ function remove_recursive() {
 alias rmr=remove_recursive
 
 sshcode() {
-  command sshcode --ssh-flags '-o "ControlPath=/tmp/test" -o "ControlMaster=auto" -o "ControlPersist=5m"' "$@"
+  command sshcode --ssh-flags '-o "ControlPath=/tmp/sshcode" -o "ControlMaster=auto" -o "ControlPersist=5m"' "$@"
 }
 
-alias vscode='code-server --cert=$HOME/quantum/cdr/MyCertificate.crt --cert-key=$HOME/quantum/cdr/MyKey.key'
+alias vscode='code-server --cert=$HOME/sshcode.crt --cert-key=$HOME/sshcode.key'
