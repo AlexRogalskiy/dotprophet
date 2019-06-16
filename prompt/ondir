@@ -1,0 +1,2 @@
+source $HOME/ondir.zsh
+trap 'ondir $PWD /' EXIT

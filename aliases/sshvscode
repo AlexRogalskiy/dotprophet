@@ -1,0 +1,3 @@
+sshvscode() {
+  sshcode --ssh-flags '-o "ControlPath=/tmp/sshcode" -o "ControlMaster=auto" -o "ControlPersist=5m"' "$@"
+}
