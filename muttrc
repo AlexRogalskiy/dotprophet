@@ -22,6 +22,6 @@ set certificate_file = "~/.mutt/certificates"
 set move = no
 
 # Needed to get and display mail (imap-fetch-mail)
-set editor = "vim"
+set editor = "nano"
 set charset = "utf-8"
 set record = ""

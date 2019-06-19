@@ -1,0 +1,3 @@
+function grmr() {
+  find . -name $1 -type f -print -exec git rm -f "{}"
+}
