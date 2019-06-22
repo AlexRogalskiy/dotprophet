@@ -1,1 +1,2 @@
 export APPENGINE_DIR="$HOME/google-cloud-sdk/platform/google_appengine"
+export GOOGLE_APP_ENGINE_DIR=/usr/local/google_appengine

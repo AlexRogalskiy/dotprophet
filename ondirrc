@@ -15,11 +15,5 @@ final leave /Users/suman/quantum/grade_view
     rm ~/quantum/grade_view/ios/Runner/GoogleService-Info.plist
     rmr .DS_Store
 
-enter /Users/suman/oxygen
-    rmr .DS_Store
-
-enter /Users/suman/quantum
-    rmr .DS_Store
-
 enter /Users/suman/.dotfiles
     rmr .DS_Store
