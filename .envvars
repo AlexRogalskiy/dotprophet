@@ -1,0 +1,4 @@
+for DOTFILE in $(find $HOME/.dotfiles/envvars -maxdepth 1 -type f)
+do
+  [ -f "$DOTFILE" ] && source "$DOTFILE"
+done
