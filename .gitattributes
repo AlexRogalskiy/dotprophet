@@ -3,5 +3,5 @@ env/* linguist-language=zsh
 prompt/* linguist-language=zsh
 .env linguist-language=zsh
 .prompt linguist-language=zsh
-.plugins.sh linguist-generated=true
 .aliases linguist-language=zsh
+.plugins.sh linguist-generated=true
