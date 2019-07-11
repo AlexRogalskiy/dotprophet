@@ -6,3 +6,6 @@ source $HOME/.dotfiles/.envvars
 source $HOME/.dotfiles/.prompt
 source $HOME/.dotfiles/.plugins.sh
 source $HOME/.dotfiles/.aliases
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
