@@ -13,4 +13,4 @@
 [tag]
 	forceSignAnnotated = true
 [core]
-	editor = nano -w~
+	editor = nano
