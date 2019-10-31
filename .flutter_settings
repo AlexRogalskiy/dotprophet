@@ -1,4 +1,5 @@
 {
   "enable-web": true,
-  "enable-macos-desktop": true
+  "enable-macos-desktop": true,
+  "ios-signing-cert": "iPhone Developer: S Ratna (NA5P98ST8K)"
 }
