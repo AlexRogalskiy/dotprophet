@@ -14,3 +14,9 @@
 	forceSignAnnotated = true
 [core]
 	editor = nano
+[lfs]
+	contenttype = 0
+	tlstimeout = 300
+	activitytimeout = 60
+	dialtimeout = 600
+	concurrenttransfers = 1
