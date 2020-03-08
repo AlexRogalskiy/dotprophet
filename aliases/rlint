@@ -1,0 +1,1 @@
+alias rlint="Rscript -e 'lintr::lint(commandArgs(trailingOnly = TRUE))'"

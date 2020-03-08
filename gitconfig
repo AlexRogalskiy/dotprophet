@@ -20,3 +20,5 @@
 	activitytimeout = 60
 	dialtimeout = 600
 	concurrenttransfers = 1
+[credential]
+	helper = osxkeychain
