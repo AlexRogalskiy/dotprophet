@@ -1,6 +1,6 @@
 .DS_Store
 
-envvars/HOMEBREW_GITHUB_API_TOKEN
+envvars/homebrew-github
 
 licenses/*
 !licenses/.gitkeep
