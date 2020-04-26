@@ -1,6 +1,0 @@
-alias date=gdate
-
-SILVER=(virtualenv:green:black user:blue:white dir:cyan:black git:green:white cmdtime:magenta:black status:red:white)
-export SILVER_SHELL=zsh
-
-eval "$(silver init)"
