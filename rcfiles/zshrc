@@ -19,3 +19,5 @@ source $HOME/.dotfiles/.plugins.sh
 source $HOME/.dotfiles/.prompt
 zsh-defer source $HOME/.dotfiles/.envvars
 zsh-defer source $HOME/.dotfiles/.aliases
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
