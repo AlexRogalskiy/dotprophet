@@ -1,6 +1,6 @@
-aliases/* linguist-language=zsh
-envvars/* linguist-language=zsh
-prompt/* linguist-language=zsh
-envvars.sh linguist-language=zsh
-prompt.sh linguist-language=zsh
-aliases.sh linguist-language=zsh
+aliases/* linguist-language=Shell
+envvars/* linguist-language=Shell
+prompt/* linguist-language=Shell
+aliases.sh linguist-language=Shell
+envvars.sh linguist-language=Shell
+prompt.sh linguist-language=Shell
