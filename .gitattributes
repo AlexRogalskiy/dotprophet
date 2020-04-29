@@ -1,7 +1,6 @@
 aliases/* linguist-language=zsh
 envvars/* linguist-language=zsh
 prompt/* linguist-language=zsh
-.env linguist-language=zsh
-.prompt linguist-language=zsh
-.aliases linguist-language=zsh
-.plugins.sh linguist-generated=true
+envvars.sh linguist-language=zsh
+prompt.sh linguist-language=zsh
+aliases.sh linguist-language=zsh
