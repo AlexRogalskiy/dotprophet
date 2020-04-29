@@ -1,4 +1,4 @@
 for DOTFILE in $(find $HOME/.dotfiles/envvars -maxdepth 1 -perm +111 -type f -or -type l)
 do
-  [ -f "$DOTFILE" ] && zsh-defer source "$DOTFILE"
+  [ -f "$DOTFILE" ] && source "$DOTFILE"
 done
