@@ -16,8 +16,8 @@ setopt CORRECT_ALL
 
 export POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
 source $HOME/.dotfiles/.plugins.sh
-source $HOME/.dotfiles/.prompt
-zsh-defer source $HOME/.dotfiles/.envvars
-zsh-defer source $HOME/.dotfiles/.aliases
+source $HOME/.dotfiles/prompt.sh
+zsh-defer source $HOME/.dotfiles/envvars.sh
+zsh-defer source $HOME/.dotfiles/aliases.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
