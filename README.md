@@ -8,6 +8,8 @@
 ## Setup
 ```
 cd ~
-ln -s ~/dotprophet/rcfiles/zshrc ~/.zshrc
+git clone git@github.com:sumanthratna/dotprophet.git
+ln -s ./dotprophet/rcfiles/zshrc ./.zshrc
 ln -s ./dotprophet/gitconfig ./.gitconfig
+ln -s ./dotprophet/rcfiles/nanorc ./.nanorc
 ```
