@@ -15,9 +15,9 @@ setopt CORRECT
 setopt CORRECT_ALL
 
 export POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
-source $HOME/.dotfiles/.plugins.sh
-source $HOME/.dotfiles/prompt.sh
-source $HOME/.dotfiles/envvars.sh
-source $HOME/.dotfiles/aliases.sh
+source $HOME/dotprophet/.plugins.sh
+source $HOME/dotprophet/prompt.sh
+source $HOME/dotprophet/envvars.sh
+source $HOME/dotprophet/aliases.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

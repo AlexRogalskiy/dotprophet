@@ -14,5 +14,5 @@ enter /Users/suman/quantum/grade_view
 final leave /Users/suman/quantum/grade_view
     rm ~/quantum/grade_view/ios/Runner/GoogleService-Info.plist
 
-enter /Users/suman/.dotfiles
+enter /Users/suman/dotprophet
     rmr .DS_Store
