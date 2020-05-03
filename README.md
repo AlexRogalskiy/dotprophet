@@ -6,7 +6,11 @@
 - [`poetry`](./aliases/poetry): so that [`poetry`](https://python-poetry.org/) uses Python 3, not Python 2 (taken from https://github.com/python-poetry/poetry/issues/536#issuecomment-498308796)
 
 ## Setup
-```
+```zsh
+cd /tmp
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+brew install getantibody/tap/antibody
+
 cd ~
 git clone git@github.com:sumanthratna/dotprophet.git
 ln -s ./dotprophet/rcfiles/zshrc ./.zshrc
