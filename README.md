@@ -9,15 +9,15 @@
 ## Setup
 
 ```zsh
-cd /tmp
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
 cd ~
 git clone git@github.com:sumanthratna/dotprophet.git
 
+cd /tmp
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 cd dotprophet
 brew bundle
 
+cd ~
 ln -s ./dotprophet/rcfiles/zshrc ./.zshrc
 ln -s ./dotprophet/gitconfig ./.gitconfig
 ln -s ./dotprophet/rcfiles/nanorc ./.nanorc
