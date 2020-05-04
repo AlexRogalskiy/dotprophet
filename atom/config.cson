@@ -1,4 +1,8 @@
 "*":
+  "atom-beautify":
+    executables:
+      autopep8:
+        path: "/usr/local/bin/autopep8"
   core:
     disabledPackages: [
       "language-csharp"
