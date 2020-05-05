@@ -29,4 +29,6 @@ ln -s ~/dotprophet/atom/config.cson ~/.atom/config.cson
 ln -s ~/dotprophet/atom/github.cson ~/.atom/github.cson
 ln -s ~/dotprophet/atom/styles.less ~/.atom/styles.less
 apm install --packages-file ~/dotprophet/atom/package-list.txt
+
+ln -s ~/dotprophet/flutter_settings ~/.flutter_settings
 ```

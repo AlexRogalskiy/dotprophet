@@ -5,4 +5,4 @@ aliases.sh linguist-language=Shell
 envvars.sh linguist-language=Shell
 prompt.sh linguist-language=Shell
 
-.flutter_settings linguist-language=JSON
+flutter_settings linguist-language=JSON
