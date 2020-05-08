@@ -31,4 +31,8 @@ ln -s ~/dotprophet/atom/styles.less ~/.atom/styles.less
 apm install --packages-file ~/dotprophet/atom/package-list.txt
 
 ln -s ~/dotprophet/flutter_settings ~/.flutter_settings
+
+ln -s ~/dotprophet/rcfiles/muttrc ~/.muttrc
+
+ln -s ~/dotprophet/rcfiles/ondirrc ~/.ondirrc
 ```
