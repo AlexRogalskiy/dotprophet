@@ -18,13 +18,16 @@ cd ~/dotprophet
 brew bundle
 
 cd ~
+
+antibody bundle < ~/dotprophet/plugins.txt > ~/dotprophet/.plugins.sh
+
 ln -s ~/dotprophet/rcfiles/zshrc ~/.zshrc
 ln -s ~/dotprophet/gitconfig ~/.gitconfig
 ln -s ~/dotprophet/rcfiles/nanorc ~/.nanorc
 
-rm ~/.atom/config.cson
-rm ~/.atom/github.cson
-rm ~/.atom/styles.less
+trash ~/.atom/config.cson
+trash ~/.atom/github.cson
+trash ~/.atom/styles.less
 ln -s ~/dotprophet/atom/config.cson ~/.atom/config.cson
 ln -s ~/dotprophet/atom/github.cson ~/.atom/github.cson
 ln -s ~/dotprophet/atom/styles.less ~/.atom/styles.less
