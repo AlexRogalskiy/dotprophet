@@ -1,6 +1,6 @@
 # @sumanthratna's dotfiles
 
-## Useful Aliases
+## Useful [Aliases](./aliases)
 
 -   [`quit`](./aliases/quit): quits Terminal.app in macOS (taken from <https://stackoverflow.com/a/22447960/7127932>)
 -   [`show`](./aliases/show): lists all the files in a pretty way, using [`exa`](https://the.exa.website/)
