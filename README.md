@@ -20,6 +20,7 @@ brew bundle
 cd ~
 
 antibody bundle < ~/dotprophet/plugins.txt > ~/dotprophet/.plugins.sh
+chmod +x ~/dotprophet/.plugins.sh
 
 ln -s ~/dotprophet/rcfiles/zshrc ~/.zshrc
 ln -s ~/dotprophet/gitconfig ~/.gitconfig
