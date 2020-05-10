@@ -1,1 +1,1 @@
-alias textedit='open -a TextEdit'
+alias textedit='open -e'
