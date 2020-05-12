@@ -40,4 +40,6 @@ ln -s ~/dotprophet/flutter_settings ~/.flutter_settings
 ln -s ~/dotprophet/rcfiles/muttrc ~/.muttrc
 
 ln -s ~/dotprophet/rcfiles/ondirrc ~/.ondirrc
+
+ln -s ~/dotprophet/sshconfig ~/.ssh/config
 ```
