@@ -9,6 +9,8 @@
 
 ## Setup
 
+Set up `neomutt` by following [this](https://unix.stackexchange.com/a/223088). 
+
 ```zsh
 cd ~
 git clone git@github.com:sumanthratna/dotprophet.git
@@ -43,3 +45,4 @@ ln -s ~/dotprophet/rcfiles/ondirrc ~/.ondirrc
 
 ln -s ~/dotprophet/sshconfig ~/.ssh/config
 ```
+
