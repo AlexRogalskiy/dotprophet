@@ -3,23 +3,13 @@ Host *
 	AddKeysToAgent yes
 	UseKeychain yes
 	IdentityFile ~/.ssh/id_rsa
+	ServerAliveInterval 120
 
 Host tj
-	User 2022sratna
 	HostName remote.tjhsst.edu
-
-Host zoidberg
-	HostName zoidberg
 	User 2022sratna
-	ProxyJump tj
 
-Host director
-	HostName director
-	User 2022sratna
-	ProxyJump tj
-
-Host snowy
-	HostName snowy
+Host zoidberg director snowy
 	User 2022sratna
 	ProxyJump tj
 
@@ -30,7 +20,6 @@ Host gitlab.tjhsst.edu
 Host localhost
 	PubkeyAuthentication yes
 	IdentityFile ~/.ssh/id_rsa_localhost
-
 
 # Added by Krypton
 Host *
