@@ -13,7 +13,8 @@ Host zoidberg director snowy
 	ProxyJump tj
 
 Host gitlab.tjhsst.edu
-	Preferredauthentications publickey
+	User 2022sratna
+	PreferredAuthentications publickey
 	IdentityFile ~/.ssh/id_ed25519
 
 Host localhost
