@@ -1,0 +1,2 @@
+# useful for zlib, for building Pillow from source:
+export CPATH=`xcrun --show-sdk-path`/usr/include
