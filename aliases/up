@@ -1,0 +1,1 @@
+alias up="(osascript -e \"repeat 2 times\" -e \"tell application \\\"System Events\\\" to tell process \\\"Terminal\\\" to key code 126 using command down\" -e \"end repeat\" &)"

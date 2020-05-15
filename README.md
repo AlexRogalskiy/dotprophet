@@ -2,14 +2,35 @@
 
 ## Useful [Aliases](./aliases)
 
--   [`quit`](./aliases/quit): quits Terminal.app in macOS (taken from <https://stackoverflow.com/a/22447960/7127932>)
--   [`rmr`](./aliases/rmr): recursively removes a file (e.g., `rmr .DS_Store`)
--   [`show`](./aliases/show): lists all the files in a pretty way, using [`exa`](https://the.exa.website/)
--   [`poetry`](./aliases/poetry): so that [Poetry](https://python-poetry.org/) uses Python 3, not Python 2 (taken from <https://github.com/python-poetry/poetry/issues/536#issuecomment-498308796>)
+### [`up`](./aliases/up)
+
+-   jumps to the previous mark in Terminal.app (prompt lines are automatically marked)
+-   useful for when you want to go to the beginning of a long block of output
+-   I wrote this one myself
+
+### [`quit`](./aliases/quit)
+
+-   quits Terminal.app in macOS
+-   taken from <https://stackoverflow.com/a/22447960/7127932>
+
+### [`rmr`](./aliases/rmr)
+
+-   recursively removes a file (e.g., `rmr .DS_Store`)
+-   adapted from <https://stackoverflow.com/a/45647470/7127932>
+
+### [`show`](./aliases/show)
+
+-   lists all the files in a pretty way, using [`exa`](https://the.exa.website/)
+-   I wrote this one myself (this wasn't hard to write)
+
+### [`poetry`](./aliases/poetry)
+
+-   forces [Poetry](https://python-poetry.org/) to use Python 3 instead of Python 2
+-   taken from <https://github.com/python-poetry/poetry/issues/536#issuecomment-498308796>
 
 ## Setup
 
-Set up `neomutt` by following [this](https://unix.stackexchange.com/a/223088). 
+Set up `neomutt` by following [this](https://unix.stackexchange.com/a/223088).
 
 ```zsh
 cd ~
@@ -45,4 +66,3 @@ ln -s ~/dotprophet/rcfiles/ondirrc ~/.ondirrc
 
 ln -s ~/dotprophet/sshconfig ~/.ssh/config
 ```
-
