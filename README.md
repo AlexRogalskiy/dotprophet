@@ -6,26 +6,31 @@
 
 -   jumps to the previous mark in Terminal.app (prompt lines are automatically marked)
 -   useful for when you want to go to the beginning of a long block of output
+-   usage: `up` (which is the same as `up 1`) or `up n`, where an `n` is an integer
 -   I wrote this one myself
 
 ### [`quit`](./aliases/quit)
 
 -   quits Terminal.app in macOS
+-   usage: `quit`
 -   taken from <https://stackoverflow.com/a/22447960/7127932>
 
 ### [`rmr`](./aliases/rmr)
 
--   recursively removes a file (e.g., `rmr .DS_Store`)
+-   recursively removes a file
+-   usage: `rmr .DS_Store`
 -   adapted from <https://stackoverflow.com/a/45647470/7127932>
 
 ### [`show`](./aliases/show)
 
 -   lists all the files in a pretty way, using [`exa`](https://the.exa.website/)
+-   usage: `show` or `show dir/`
 -   I wrote this one myself (this wasn't hard to write)
 
 ### [`poetry`](./aliases/poetry)
 
 -   forces [Poetry](https://python-poetry.org/) to use Python 3 instead of Python 2
+-   usage: the same as `command poetry`
 -   taken from <https://github.com/python-poetry/poetry/issues/536#issuecomment-498308796>
 
 ## Setup
