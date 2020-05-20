@@ -11,6 +11,7 @@ is_brew_service_running () {
 
 vscode () {
     is_brew_service_running code-server
+    # TODO: don't use a brew service, just use code-server
     if [[ $? -eq 0 ]]; then
         brew services restart code-server
     else

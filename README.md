@@ -21,6 +21,12 @@
 -   usage: `rmr .DS_Store`
 -   adapted from <https://stackoverflow.com/a/45647470/7127932>
 
+### [`git fork`](./aliases/git)
+
+-   forks a GitHub repository, clones it, adds the origin and upstream remotes, and `cd`s into it
+-   usage: `git fork nirum/tableprint`
+-   I wrote this one myself
+
 ### [`vscode`](./aliases/vscode)
 -   launches a [code-server](https://github.com/cdr/code-server) instance in the browser
 -   usage: `vscode`
