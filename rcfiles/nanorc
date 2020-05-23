@@ -1,6 +1,8 @@
 set autoindent
 set mouse
 set linenumbers
+set tabsize 4
+set tabstospaces
 include "/usr/local/share/nano/asm.nanorc"
 include "/usr/local/share/nano/autoconf.nanorc"
 include "/usr/local/share/nano/awk.nanorc"
