@@ -85,5 +85,5 @@ ln -s ~/dotprophet/rcfiles/muttrc ~/.muttrc
 
 ln -s ~/dotprophet/rcfiles/ondirrc ~/.ondirrc
 
-ln -s ~/dotprophet/sshconfig ~/.ssh/config
+ln -s ~/dotprophet/ssh_config ~/.ssh/config
 ```
