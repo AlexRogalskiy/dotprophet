@@ -15,6 +15,7 @@
       "metrics"
     ]
     telemetryConsent: "no"
+    useTreeSitterParsers: false
   editor: {}
   "exception-reporting":
     userId: "e140f44a-d67e-4347-a589-2e45a72201ee"
@@ -29,6 +30,8 @@
       pydocstyle:
         convention: "numpy"
     python: "python3"
+  kite:
+    showWelcomeNotificationOnStartup: false
   linter: {}
   "linter-ui-default":
     panelHeight: 300

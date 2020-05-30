@@ -1,5 +1,6 @@
 atom-beautify@0.33.4
 atom-ide-ui@0.13.0
-fonts@3.10.0
+fonts@3.11.0
 ide-python@1.5.0
+kite@0.184.0
 
