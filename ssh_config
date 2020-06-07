@@ -17,6 +17,10 @@ Host gitlab.tjhsst.edu
 	PreferredAuthentications publickey
 	IdentityFile ~/.ssh/id_ed25519
 
+Host discovery
+    Hostname discovery7.hpcc.dartmouth.edu
+    User f004v38
+
 Host localhost
 	PubkeyAuthentication yes
 	IdentityFile ~/.ssh/id_rsa_localhost
