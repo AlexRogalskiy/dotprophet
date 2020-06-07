@@ -33,12 +33,6 @@
 -   usage: `vscode`
 -   I wrote this one myself
 
-### [`is_brew_service_running`](./aliases/vscode)
-
--   exits with status code 0 if the requested brew service has started
--   usage: `is_brew_service_running code-server`
--   I wrote this one myself
-
 ### [`show`](./aliases/show)
 
 -   lists all the files in a pretty way, using [`exa`](https://the.exa.website/)

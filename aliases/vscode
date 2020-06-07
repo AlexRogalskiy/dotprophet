@@ -1,24 +1,6 @@
-BLUE=$(printf '\033[36m')
-NORMAL=$(printf '\033[m')
-
-is_brew_service_running () {
-    # returns 1 if service is not running
-    # returns 0 is service is running
-    if [ -z "${1+1}" ]; then return 1; fi
-    brew services list | grep "$1" | grep started >/dev/null
-    return $pipestatus[3]
-}
-
 vscode () {
-    is_brew_service_running code-server
-    # TODO: don't use a brew service, just use code-server
-    if [[ $? -eq 0 ]]; then
-        brew services restart code-server
-    else
-        brew services run code-server
-    fi
     open "http://$(yq r ~/.config/code-server/config.yaml bind-addr)"
     yq r ~/.config/code-server/config.yaml password | pbcopy
     echo "Copied password to clipboard"
-    echo -e "Run ${BLUE}brew services stop code-server${NORMAL} when you're done"
+    code-server --cert=$HOME/sshcode.crt --cert-key=$HOME/sshcode.key
 }
