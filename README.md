@@ -6,7 +6,7 @@
 
 -   jumps to the previous mark in Terminal.app (prompt lines are automatically marked)
 -   useful for when you want to go to the beginning of a long block of output
--   usage: `up` (which is the same as `up 1`) or `up n`, where an `n` is an integer
+-   usage: `up` (which is the same as `up 1`) or `up n`, where an `n` is a positive integer
 -   I wrote this one myself
 
 ### [`quit`](./aliases/quit)
@@ -36,8 +36,14 @@
 ### [`show`](./aliases/show)
 
 -   lists all the files in a pretty way, using [`exa`](https://the.exa.website/)
--   usage: `show` or `show dir/`
+-   usage: `show` or `show dir/` or `show file`
 -   I wrote this one myself (this wasn't hard to write)
+
+### [`globalprotect`](./aliases/globalprotect)
+
+-   quits the GlobalProtect VPN app
+-   usage: `globalprotect start` or `globalprotect stop`
+-   adapted from <https://gist.github.com/kaleksandrov/3cfee92845a403da995e7e44ba771183>
 
 ### [`poetry`](./aliases/poetry)
 
