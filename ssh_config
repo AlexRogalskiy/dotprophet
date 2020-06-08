@@ -21,6 +21,10 @@ Host discovery
     Hostname discovery7.hpcc.dartmouth.edu
     User f004v38
 
+Host eabsentee
+    Hostname ssh.pythonanywhere.com
+    User eabsenteeproject
+
 Host localhost
 	PubkeyAuthentication yes
 	IdentityFile ~/.ssh/id_rsa_localhost
