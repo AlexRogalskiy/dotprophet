@@ -20,6 +20,7 @@ Host gitlab.tjhsst.edu
 Host discovery
     Hostname discovery7.hpcc.dartmouth.edu
     User f004v38
+    XAuthLocation /opt/X11/bin/xauth
 
 Host eabsentee
     Hostname ssh.pythonanywhere.com
