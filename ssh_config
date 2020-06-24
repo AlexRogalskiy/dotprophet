@@ -22,6 +22,10 @@ Host discovery
     User f004v38
     XAuthLocation /opt/X11/bin/xauth
 
+Host gv01 p02 p03 p04
+    User f004v38
+    ProxyJump discovery
+
 Host eabsentee
     Hostname ssh.pythonanywhere.com
     User eabsenteeproject
