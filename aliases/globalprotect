@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/env zsh
 
 # adapted from https://gist.github.com/kaleksandrov/3cfee92845a403da995e7e44ba771183
 
