@@ -18,7 +18,7 @@ Host gitlab.tjhsst.edu
 	IdentityFile ~/.ssh/id_ed25519
 
 Host discovery
-    Hostname discovery7.hpcc.dartmouth.edu
+    HostName discovery7.hpcc.dartmouth.edu
     User f004v38
     XAuthLocation /opt/X11/bin/xauth
 
@@ -27,7 +27,7 @@ Host gv01 p02 p03 p04
     ProxyJump discovery
 
 Host eabsentee
-    Hostname ssh.pythonanywhere.com
+    HostName ssh.pythonanywhere.com
     User eabsenteeproject
 
 Host localhost
