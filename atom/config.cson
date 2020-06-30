@@ -37,5 +37,6 @@
   "linter-ui-default":
     panelHeight: 300
     showPanel: true
+  "markdown-preview": {}
   welcome:
     showOnStartup: false
