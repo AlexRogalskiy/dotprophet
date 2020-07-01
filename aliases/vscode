@@ -1,8 +1,0 @@
-#!/bin/env zsh
-
-vscode () {
-    open "http://$(yq r ~/.config/code-server/config.yaml bind-addr)"
-    yq r ~/.config/code-server/config.yaml password | pbcopy
-    echo "Copied password to clipboard"
-    code-server --cert=$HOME/sshcode.crt --cert-key=$HOME/sshcode.key
-}
