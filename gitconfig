@@ -29,10 +29,9 @@
 	process = git-lfs filter-process
 	required = true
 [core]
-        pager = delta --dark
-
+  pager = delta --dark
 [interactive]
-        diffFilter = delta --color-only
+  diffFilter = delta --color-only
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 [man]
