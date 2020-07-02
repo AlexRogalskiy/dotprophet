@@ -62,6 +62,7 @@ git clone git@github.com:sumanthratna/dotprophet.git
 cd /tmp
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 cd ~/dotprophet
+ln -s ~/dotprophet/Brewfile ~/.Brewfile
 brew bundle
 
 cd ~
