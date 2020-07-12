@@ -16,7 +16,7 @@ tap "sass/sass"
 cask "osxfuse"
 brew "openssl@1.1"
 brew "readline"
-brew "python@3.8"
+brew "python@3.8", link: false
 brew "asciinema"
 brew "autoconf"
 brew "automake"
