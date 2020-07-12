@@ -26,7 +26,7 @@ Host gv01 p02 p03 p04
     User f004v38
     ProxyJump discovery
 
-Host eabsentee
+Host eabsentee eAbsentee
     HostName ssh.pythonanywhere.com
     User eabsenteeproject
 
