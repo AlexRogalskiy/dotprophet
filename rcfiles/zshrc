@@ -19,7 +19,7 @@ setopt CORRECT_ALL
 export POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
 source $HOME/dotprophet/.plugins.sh
 source $HOME/dotprophet/prompt.sh
-source $HOME/dotprophet/envvars.sh
-source $HOME/dotprophet/aliases.sh
+zsh-defer source $HOME/dotprophet/envvars.sh
+zsh-defer source $HOME/dotprophet/aliases.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
