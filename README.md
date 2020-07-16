@@ -27,12 +27,6 @@
 -   usage: `git fork nirum/tableprint`
 -   I wrote this one myself
 
-### [`vscode`](./aliases/vscode)
-
--   launches a [code-server](https://github.com/cdr/code-server) instance in the browser
--   usage: `vscode`
--   I wrote this one myself
-
 ### [`show`](./aliases/show)
 
 -   lists all the files in a pretty way, using [`exa`](https://the.exa.website/)
