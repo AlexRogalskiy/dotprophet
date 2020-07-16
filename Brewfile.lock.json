@@ -2,7 +2,7 @@
   "entries": {
     "tap": {
       "adoptopenjdk/openjdk": {
-        "revision": "fbba23249e7a6a539286c3047c68875d7abe81a6"
+        "revision": "41d3c24fee8b52578e120c6fd707b87073f392ac"
       },
       "caskformula/caskformula": {
         "revision": "1a0815333f5b3fb627c1a3e88572f40047f80aaa"
@@ -11,7 +11,7 @@
         "revision": "a52210876484e02c3770be6e63fafec523d1342d"
       },
       "dart-lang/dart": {
-        "revision": "3a50b337efeeacc505ec40e1d6def44b18913347"
+        "revision": "f78e9806941c154f04adc2e191a8b8033965a6cd"
       },
       "eth-p/software": {
         "revision": "83a44aeb53bbd94197ead0531ad14539897d8264"
@@ -26,22 +26,22 @@
         "revision": "351854e10f79b6f269fe799873fd0dc85bc0af40"
       },
       "homebrew/bundle": {
-        "revision": "f760551841012ee20c90f2afd336c15423b23479"
+        "revision": "3c72d9cb23fb868781f2a8fe5e243def2b23f085"
       },
       "homebrew/cask": {
-        "revision": "f1a36ff2af3ecb61eac37d05ae13611adffe81d9"
+        "revision": "7dc7080f2fb305a9cebe7f1556c79ac279227f98"
       },
       "homebrew/cask-fonts": {
-        "revision": "70b06df1704d77baca7c43e4d5446df1c23d52a3"
+        "revision": "54b3f7814431dfd39f6d396ff298ce173e082187"
       },
       "homebrew/cask-versions": {
-        "revision": "fa157332a5628001a94c4452b84f9b130af6c1da"
+        "revision": "1a708065302ad22420f46461d3004bd0f44ca6e1"
       },
       "homebrew/core": {
-        "revision": "07faa27c46047a8427f3a54b6494d4eee855a751"
+        "revision": "2308b7fdff455f7c233a44e0b6b4bab7840eecc7"
       },
       "homebrew/services": {
-        "revision": "a379971f8cbca1875f625a47a93efeafc6512091"
+        "revision": "a578043dfd7a2f6836b6eb7860a63db6ddb4ef42"
       },
       "sass/sass": {
         "revision": "7a0d2519cd0a5150b3e0096bded2bcc62f3a1112"
@@ -55,7 +55,7 @@
         }
       },
       "adoptopenjdk14": {
-        "version": "14.0.1,7.1",
+        "version": "14.0.2,12",
         "options": {
           "full_name": "adoptopenjdk14"
         }
@@ -125,6 +125,12 @@
         "options": {
           "full_name": "zoomus"
         }
+      },
+      "docker": {
+        "version": "2.3.0.3,45519",
+        "options": {
+          "full_name": "docker"
+        }
       }
     },
     "brew": {
@@ -171,22 +177,22 @@
         }
       },
       "python@3.8": {
-        "version": "3.8.3_2",
+        "version": "3.8.4",
         "bottle": {
           "cellar": "/usr/local/Cellar",
           "prefix": "/usr/local",
           "files": {
             "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/python%403.8-3.8.3_2.catalina.bottle.tar.gz",
-              "sha256": "307604a075d3df682ba45afae0894df8c4952536bc75ddcc43e3bfa4a571f0ba"
+              "url": "https://homebrew.bintray.com/bottles/python%403.8-3.8.4.catalina.bottle.tar.gz",
+              "sha256": "19e0c22f99fcd17aa7bcbe81eca8662bc2b105024a9c7ac50a54e5dc4ea2170d"
             },
             "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/python%403.8-3.8.3_2.mojave.bottle.tar.gz",
-              "sha256": "8ef8c06b1e6a586ae860c628c8dba7d6dd24a2d18ecfda3521a665c770ba698e"
+              "url": "https://homebrew.bintray.com/bottles/python%403.8-3.8.4.mojave.bottle.tar.gz",
+              "sha256": "4cc0fc162f6fdc7f1443e32df67a6570401697e4c56498825a5f14d887be5b1f"
             },
             "high_sierra": {
-              "url": "https://homebrew.bintray.com/bottles/python%403.8-3.8.3_2.high_sierra.bottle.tar.gz",
-              "sha256": "daca18eaff445a9a1ed6923a0ee7bf6053b42e911308335af231aa4e97381fc7"
+              "url": "https://homebrew.bintray.com/bottles/python%403.8-3.8.4.high_sierra.bottle.tar.gz",
+              "sha256": "cd34d3767105e436c00c8ad16ccc83c7bf7f3a4573ade6a336d5d67a0a6eb1ce"
             }
           }
         },
@@ -1411,9 +1417,9 @@
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "2.4.6-37-gb931f50",
+        "HOMEBREW_VERSION": "2.4.7-42-gf28f1f1",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "07faa27c46047a8427f3a54b6494d4eee855a751",
+        "Homebrew/homebrew-core": "2308b7fdff455f7c233a44e0b6b4bab7840eecc7",
         "CLT": "",
         "Xcode": "12.0",
         "macOS": "10.16"
