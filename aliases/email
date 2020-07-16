@@ -1,0 +1,9 @@
+#!/bin/env zsh
+
+email () {
+  # TODO: if no source is passed, search through all sources
+  case $* in
+      github*) curl https://api.github.com/users/$2/events | jq '[.[] | .payload.commits[]?.author.email] | unique' ;;
+      *) command echo $@ is not a valid source. ;;
+  esac
+}

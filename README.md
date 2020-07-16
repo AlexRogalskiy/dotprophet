@@ -27,6 +27,13 @@
 -   usage: `git fork nirum/tableprint`
 -   I wrote this one myself
 
+### [`email`](./aliases/email)
+
+-   returns a list of emails given a social media handle
+-   useful for when you know someone's GitHub username and need to contact them via email
+-   usage: `email github AutinMitra`
+-   I wrote this one myself
+
 ### [`show`](./aliases/show)
 
 -   lists all the files in a pretty way, using [`exa`](https://the.exa.website/)
