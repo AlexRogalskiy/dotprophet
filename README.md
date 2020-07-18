@@ -115,3 +115,4 @@ Useful tips from [Macworld](http://hints.macworld.com/article.php?story=20140114
 > -   **⎋ + T** Swap the last two words before the cursor
 > -   **⌥ + F** Move cursor forward one word on the current line
 > -   **⌥ + B** Move cursor backward one word on the current line
+-   **⌥ + [click]** Move the cursor to the location of the mouse
