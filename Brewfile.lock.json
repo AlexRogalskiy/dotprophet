@@ -131,6 +131,30 @@
         "options": {
           "full_name": "docker"
         }
+      },
+      "gpg-suite-no-mail": {
+        "version": "2020.1",
+        "options": {
+          "full_name": "gpg-suite-no-mail"
+        }
+      },
+      "jgrasp": {
+        "version": "2.0.6_04",
+        "options": {
+          "full_name": "jgrasp"
+        }
+      },
+      "keybase": {
+        "version": "5.5.0-20200526170801,139bb348af",
+        "options": {
+          "full_name": "keybase"
+        }
+      },
+      "postman": {
+        "version": "7.28.0",
+        "options": {
+          "full_name": "postman"
+        }
       }
     },
     "brew": {
