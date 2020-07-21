@@ -3,7 +3,24 @@
 email () {
   # TODO: if no source is passed, search through all sources
   case $* in
-      github*) curl https://api.github.com/users/$2/events | jq '[.[] | .payload.commits[]?.author.email] | unique' ;;
+      github*)
+        curl -s https://api.github.com/users/$2/events | jq '[.[] | .payload.commits[]?.author.email] | unique'
+        ;;
+      gitlab*)
+        # TODO: this will output 1 array per project that the user has committed to recently
+        # it would be nice to merge these two arrays and apply the unique jq filter
+        for project in $(curl -s https://gitlab.com/api/v4/users/$2/events | jq 'group_by([.project_id]) | map({ project_id: .[0].project_id, commits: map(.push_data.commit_to) | unique })' | jq -r '.[] | @base64')
+        do
+          project_id=$(echo $project | base64 --decode | jq -r '.project_id')
+          read -rA commits <<< $(echo $project | base64 --decode | jq -r '.commits | @sh')
+          local select_re=".id == $(echo ${(j{ or .id == })commits})"
+          unset commits
+          # read -rA project_emails <<< $(curl -s https://gitlab.com/api/v4/projects/${project_id}/repository/commits | jq -r --arg re ${select_re} '[.[] | select($re) | .committer_email, .author_email] | unique | @sh')
+          # echo $project_emails
+          # unset project_emails
+          curl -s https://gitlab.com/api/v4/projects/${project_id}/repository/commits | jq -r --arg re ${select_re} '[.[] | select($re) | .committer_email, .author_email] | unique'
+        done
+        ;;
       *) command echo $@ is not a valid source. ;;
   esac
 }
