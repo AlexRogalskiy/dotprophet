@@ -39,4 +39,4 @@
 [man "batman"]
 	cmd = batman
 [pull]
-	ff = only
+	rebase = false
