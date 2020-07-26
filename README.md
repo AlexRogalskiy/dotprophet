@@ -34,6 +34,13 @@
 -   usage: `email github AutinMitra`
 -   I wrote this one myself
 
+### [`postgres`](./aliases/postgres)
+
+-   does everything that `pg_ctl` can do
+-   useful for when you don't want to use a brew service for Postgres
+-   usage: `postgres start`, `postgres stop`, etc. (see `pg_ctl --help`)
+-   I wrote this one myself
+
 ### [`show`](./aliases/show)
 
 -   lists all the files in a pretty way, using [`exa`](https://the.exa.website/)
