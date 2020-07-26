@@ -46,12 +46,6 @@
 -   usage: `globalprotect start` or `globalprotect stop`
 -   adapted from <https://gist.github.com/kaleksandrov/3cfee92845a403da995e7e44ba771183>
 
-### [`poetry`](./aliases/poetry)
-
--   forces [Poetry](https://python-poetry.org/) to use Python 3 instead of Python 2
--   usage: the same as `command poetry`
--   taken from <https://github.com/python-poetry/poetry/issues/536#issuecomment-498308796>
-
 ## Setup
 
 Set up `neomutt` by following [this](https://unix.stackexchange.com/a/223088).
@@ -115,4 +109,5 @@ Useful tips from [Macworld](http://hints.macworld.com/article.php?story=20140114
 > -   **⎋ + T** Swap the last two words before the cursor
 > -   **⌥ + F** Move cursor forward one word on the current line
 > -   **⌥ + B** Move cursor backward one word on the current line
+
 -   **⌥ + [click]** Move the cursor to the location of the mouse
