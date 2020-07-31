@@ -1,45 +1,45 @@
 Host *
-	AddKeysToAgent yes
-	UseKeychain yes
-	IdentityFile ~/.ssh/id_rsa
-	ServerAliveInterval 120
+		AddKeysToAgent yes
+		UseKeychain yes
+		IdentityFile ~/.ssh/id_rsa
+		ServerAliveInterval 120
 
 Host tj
-	HostName remote.tjhsst.edu
-	User 2022sratna
+		HostName remote.tjhsst.edu
+		User 2022sratna
 
 Host zoidberg director snowy
-	User 2022sratna
-    ProxyCommand krssh -p "ssh -W %h:%p tj" -h %h
+		User 2022sratna
+	  ProxyCommand krssh -p "ssh -W %h:%p tj" -h %h
 
 Host gitlab.tjhsst.edu
-	User 2022sratna
-	PreferredAuthentications publickey
-	IdentityFile ~/.ssh/id_ed25519
+		User 2022sratna
+		PreferredAuthentications publickey
+		IdentityFile ~/.ssh/id_ed25519
 
 Host discovery
-    HostName discovery7.hpcc.dartmouth.edu
-    User f004v38
-    XAuthLocation /opt/X11/bin/xauth
+	  HostName discovery7.hpcc.dartmouth.edu
+	  User f004v38
+	  XAuthLocation /opt/X11/bin/xauth
 
 Host gv01 p02 p03 p04
-    User f004v38
-    ProxyCommand krssh -p "ssh -W %h:%p discovery" -h %h
+	  User f004v38
+	  ProxyCommand krssh -p "ssh -W %h:%p discovery" -h %h
 
 Host eabsentee eAbsentee
     HostName ssh.pythonanywhere.com
     User eabsenteeproject
 
 Host localhost
-	PubkeyAuthentication yes
-	IdentityFile ~/.ssh/id_rsa_localhost
+		PubkeyAuthentication yes
+		IdentityFile ~/.ssh/id_rsa_localhost
 
 # Added by Krypton
 Host *
-	IdentityAgent ~/.kr/krd-agent.sock
-	ProxyCommand /usr/local/bin/krssh %h %p
-	IdentityFile ~/.ssh/id_krypton
-	IdentityFile ~/.ssh/id_ed25519
-	IdentityFile ~/.ssh/id_rsa
-	IdentityFile ~/.ssh/id_ecdsa
-	IdentityFile ~/.ssh/id_dsa
+		IdentityAgent ~/.kr/krd-agent.sock
+		ProxyCommand /usr/local/bin/krssh %h %p
+		IdentityFile ~/.ssh/id_krypton
+		IdentityFile ~/.ssh/id_ed25519
+		IdentityFile ~/.ssh/id_rsa
+		IdentityFile ~/.ssh/id_ecdsa
+		IdentityFile ~/.ssh/id_dsa
