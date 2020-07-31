@@ -10,7 +10,7 @@ Host tj
 
 Host zoidberg director snowy
 	User 2022sratna
-	ProxyJump tj
+    ProxyCommand krssh -p "ssh -W %h:%p tj" -h %h
 
 Host gitlab.tjhsst.edu
 	User 2022sratna
@@ -24,7 +24,7 @@ Host discovery
 
 Host gv01 p02 p03 p04
     User f004v38
-    ProxyJump discovery
+    ProxyCommand krssh -p "ssh -W %h:%p discovery" -h %h
 
 Host eabsentee eAbsentee
     HostName ssh.pythonanywhere.com
