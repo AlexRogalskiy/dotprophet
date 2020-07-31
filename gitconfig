@@ -8,7 +8,7 @@
 [tag]
 	forceSignAnnotated = true
 [core]
-	editor = nano
+	editor = nvim
 [alias]
 	# Quote / unquote a sh command, converting it to / from a git alias string
 	# taken from https://stackoverflow.com/a/39616600/7127932
