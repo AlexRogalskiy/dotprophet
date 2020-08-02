@@ -90,6 +90,10 @@ ln -s ~/dotprophet/rcfiles/nanorc ~/.nanorc
 trash ~/.atom/config.cson
 trash ~/.atom/github.cson
 trash ~/.atom/styles.less
+python3.8 -m venv ~/dotprophet/atom/venv
+source ~/dotprophet/atom/venv/bin/activate
+python -m pip install 'python-language-server[all]'
+deactivate
 ln -s ~/dotprophet/atom/config.cson ~/.atom/config.cson
 ln -s ~/dotprophet/atom/github.cson ~/.atom/github.cson
 ln -s ~/dotprophet/atom/styles.less ~/.atom/styles.less

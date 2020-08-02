@@ -30,7 +30,7 @@
         follow_imports: true
       pydocstyle:
         convention: "numpy"
-    python: "python3"
+    python: "$HOME/dotprophet/atom/venv/bin/python"
   kite:
     showWelcomeNotificationOnStartup: false
   linter: {}
