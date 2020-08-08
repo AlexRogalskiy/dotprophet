@@ -181,7 +181,7 @@ endfunction
 
 " Dracula Mode (Dark)
 function! ColorDracula()
-    let g:airline_theme=''
+    let g:airline_theme='tomorrow'
     color dracula
     IndentLinesEnable
 endfunction
