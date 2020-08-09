@@ -808,27 +808,6 @@
           }
         }
       },
-      "less": {
-        "version": "551",
-        "bottle": {
-          "cellar": ":any",
-          "prefix": "/usr/local",
-          "files": {
-            "catalina": {
-              "url": "https://homebrew.bintray.com/bottles/less-551.catalina.bottle.tar.gz",
-              "sha256": "a76b3f1fb43e1e0ab566a70eca5430afa744d6d87430b55e9a5b98160834c8b9"
-            },
-            "mojave": {
-              "url": "https://homebrew.bintray.com/bottles/less-551.mojave.bottle.tar.gz",
-              "sha256": "2ee3f16d15855ab88ad87067085c0f2dd58c90c5b91ae51499ae0548a24693b2"
-            },
-            "high_sierra": {
-              "url": "https://homebrew.bintray.com/bottles/less-551.high_sierra.bottle.tar.gz",
-              "sha256": "46cd5ba33b6a1d00cfa3993712ea617bce5b6c9908b016a72413f370eda714be"
-            }
-          }
-        }
-      },
       "libyaml": {
         "version": "0.2.5",
         "bottle": {
@@ -1522,12 +1501,12 @@
   "system": {
     "macos": {
       "big_sur": {
-        "HOMEBREW_VERSION": "2.4.7-42-gf28f1f1",
+        "HOMEBREW_VERSION": "2.4.9-334-g984e926",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "2308b7fdff455f7c233a44e0b6b4bab7840eecc7",
+        "Homebrew/homebrew-core": "a918a56f2ea242ab5158df84755a10a617d63ebf",
         "CLT": "",
         "Xcode": "12.0",
-        "macOS": "10.16"
+        "macOS": "11.0"
       }
     }
   }

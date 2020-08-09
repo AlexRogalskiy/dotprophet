@@ -1,3 +1,0 @@
-#!/bin/env zsh
-
-export BAT_CONFIG_PATH="$(dirname ${(%):-%N})/bat.conf"
