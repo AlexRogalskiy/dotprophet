@@ -10,7 +10,7 @@ Host tj
 
 Host zoidberg director snowy
 		User 2022sratna
-	  ProxyCommand krssh -p "ssh -W %h:%p tj" -h %h
+		ProxyCommand krssh -p "ssh -W %h:%p tj" -h %h
 
 Host gitlab.tjhsst.edu
 		User 2022sratna
@@ -18,17 +18,17 @@ Host gitlab.tjhsst.edu
 		IdentityFile ~/.ssh/id_ed25519
 
 Host discovery
-	  HostName discovery7.hpcc.dartmouth.edu
-	  User f004v38
-	  XAuthLocation /opt/X11/bin/xauth
+		HostName discovery7.hpcc.dartmouth.edu
+		User f004v38
+		XAuthLocation /opt/X11/bin/xauth
 
 Host gv01 p02 p03 p04
-	  User f004v38
-	  ProxyCommand krssh -p "ssh -W %h:%p discovery" -h %h
+		User f004v38
+		ProxyCommand krssh -p "ssh -W %h:%p discovery" -h %h
 
 Host eabsentee eAbsentee
-    HostName ssh.pythonanywhere.com
-    User eabsenteeproject
+		HostName ssh.pythonanywhere.com
+		User eabsenteeproject
 
 Host localhost
 		PubkeyAuthentication yes
