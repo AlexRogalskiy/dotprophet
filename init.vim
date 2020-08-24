@@ -85,6 +85,7 @@ set encoding=utf-8
 set number
 set title
 set mouse=a
+set colorcolumn=80
 
 """ Plugin Configurations
 
