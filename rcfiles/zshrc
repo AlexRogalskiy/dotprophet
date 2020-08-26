@@ -15,6 +15,7 @@ else
 fi
 setopt CORRECT
 setopt CORRECT_ALL
+setopt INTERACTIVE_COMMENTS
 
 export POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
 source $HOME/dotprophet/.plugins.sh
