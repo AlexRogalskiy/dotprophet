@@ -40,3 +40,5 @@
 	cmd = batman
 [pull]
 	rebase = false
+[push]
+	followTags = true
