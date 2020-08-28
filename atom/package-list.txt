@@ -1,6 +1,6 @@
 atom-beautify@0.33.4
 atom-ide-ui@0.13.0
-fonts@3.11.0
+fonts@3.12.0
 ide-html@0.6.0
 ide-python@1.5.0
 platformio-ide-terminal@2.10.0
