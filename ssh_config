@@ -8,7 +8,7 @@ Host tj
 		HostName remote.tjhsst.edu
 		User 2022sratna
 
-Host zoidberg director snowy
+Host zoidberg snowy infocube
 		User 2022sratna
 		ProxyCommand krssh -p "ssh -W %h:%p tj" -h %h
 
