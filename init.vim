@@ -75,6 +75,43 @@ let NERDTreeShowHidden=1
 let g:NERDTreeDirArrowExpandable = '↠'
 let g:NERDTreeDirArrowCollapsible = '↡'
 
+" Goyo
+function! s:goyo_enter()
+    set eventignore=FocusGained
+
+    set noshowmode noshowcmd
+
+    let b:quitting = 0
+    let b:quitting_bang = 0
+    autocmd QuitPre <buffer> let b:quitting = 1
+    cabbrev <buffer> q! let b:quitting_bang = 1 <bar> q!
+
+    if has('gui_running')
+        set fullscreen
+        set linespace=7
+        set number
+    elseif exists('$TMUX')
+        silent !tmux set status off
+    endif
+endfunction
+
+function! s:goyo_leave()
+    set eventignore=
+
+    " Quit Vim if this is the only remaining buffer
+    if b:quitting && len(filter(range(1, bufnr('$')), 'buflisted(v:val)')) == 1
+        if b:quitting_bang
+            qa!
+        else
+            qa
+        endif
+    endif
+endfunction
+
+let g:goyo_linenr=1
+autocmd! User GoyoEnter call <SID>goyo_enter()
+autocmd! User GoyoLeave call <SID>goyo_leave()
+
 " Airline
 let g:airline_powerline_fonts = 1
 let g:airline_section_z = ' %{strftime("%-I:%M %p")}'
@@ -145,6 +182,40 @@ let g:fzf_colors =
   \ 'header':  ['fg', 'Comment'] }
 
 """ Filetype-Specific Configurations
+
+function GitCommitEditor()
+    " https://vi.stackexchange.com/a/13297
+
+    " :z
+    " normal zz  " set the cursor to the top
+
+    " Check spelling.
+    setlocal spell
+    " Make bad spelling very obvious!
+    :hi SpellBad ctermbg=red ctermbg=white guibg=red guifg=white
+
+    " Never auto-indent.
+    setlocal indentexpr=''
+
+    " No literal tabs, indent 4.
+    setlocal expandtab shiftwidth=4 tabstop=4
+
+    " Margin for emails, make it obvious where 72 characters is.
+    setlocal textwidth=72
+    setlocal colorcolumn=+1
+
+    " Strip space on save.
+    fun! <SID>StripTrailingWhitespaces()
+        let l = line(".")
+        let c = col(".")
+        %s/\s\+$//e
+        call cursor(l, c)
+    endfun
+    autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+
+    :Goyo 72
+endfun
+autocmd FileType gitcommit call GitCommitEditor()
 
 " HTML, XML, Jinja
 autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
