@@ -30,7 +30,6 @@ Plug 'rhysd/vim-color-spring-night'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
-Plug 'majutsushi/tagbar'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -131,11 +130,6 @@ nmap ga <Plug>(EasyAlign)
 let g:indentLine_char = '▏'
 let g:indentLine_color_gui = '#363949'
 
-" TagBar
-let g:tagbar_width = 30
-let g:tagbar_iconchars = ['↠', '↡']
-autocmd VimEnter * Tagbar
-
 " fzf-vim
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
@@ -215,10 +209,8 @@ endfunction
 let mapleader=","
 nmap <leader>q :NERDTreeToggle<CR>
 nmap \ <leader>q
-nmap <leader>w :TagbarToggle<CR>
 nmap <leader>ee :Colors<CR>
 nmap <leader>ea :AirlineTheme
-nmap <leader>e1 :call ColorDracula()<CR>
 nmap <leader>e2 :call ColorSeoul256()<CR>
 nmap <leader>e3 :call ColorForgotten()<CR>
 nmap <leader>e4 :call ColorZazen()<CR>
