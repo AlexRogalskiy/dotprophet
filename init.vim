@@ -2,13 +2,11 @@
 """ Heavily inspired by Optixal's Neovim Init.vim
 """ https://github.com/Optixal/neovim-init.vim/blob/65801818644aab134d3e2261805219e9eed7d968/init.vim
 
-autocmd VimEnter * belowright split | term
-
 """ Vim-Plug
-call plug#begin()
+call plug#begin(stdpath('data') . '/plugged')
 
 " Aesthetics - Main
-Plug 'dracula/vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
@@ -47,7 +45,7 @@ let g:python3_host_prog = expand('~/.config/nvim/env/bin/python')
 
 """ Coloring
 syntax on
-color dracula
+colorscheme dracula | color dracula
 highlight Pmenu guibg=white guifg=black gui=bold
 highlight Comment gui=bold
 highlight Normal gui=none
@@ -65,9 +63,8 @@ set ruler laststatus=2 showcmd showmode
 set list listchars=trail:»,tab:»-
 set fillchars+=vert:\
 set wrap breakindent
-set encoding=utf-8
-set number
-set title
+set encoding=UTF-8
+set number title
 set mouse=a
 set colorcolumn=80
 
@@ -81,8 +78,9 @@ let g:NERDTreeDirArrowCollapsible = '↡'
 " Airline
 let g:airline_powerline_fonts = 1
 let g:airline_section_z = ' %{strftime("%-I:%M %p")}'
-let g:airline_section_warning = ''
-"let g:airline#extensions#tabline#enabled = 1
+let g:airline_skip_empty_sections = 1
+let g:airline#extensions#tabline#enabled = 1
+" let g:webdevicons_enable_airline_statusline = 1
 
 " Neovim :Terminal
 tmap <Esc> <C-\><C-n>
@@ -90,6 +88,17 @@ tmap <C-w> <Esc><C-w>
 "tmap <C-d> <Esc>:q<CR>
 autocmd BufWinEnter,WinEnter term://* startinsert
 autocmd BufLeave term://* stopinsert
+
+" bottom terminal
+function OpenBottomTerminal()
+    " don't open multiple terminals:
+    if (&buftype !=# 'terminal' && &ft !=# 'vim-plug')
+        belowright split | term
+        " don't highlight words in the terminal as red:
+        " :syntax off
+    endif
+endfunction
+autocmd FileType * if &ft != 'gitcommit' | call OpenBottomTerminal() | endif
 
 " Deoplete
 let g:deoplete#enable_at_startup = 1
@@ -161,8 +170,8 @@ endfunction
 
 " Dracula Mode (Dark)
 function! ColorDracula()
-    let g:airline_theme='tomorrow'
-    color dracula
+    let g:airline_theme='dracula'
+    colorscheme dracula | color dracula
     IndentLinesEnable
 endfunction
 
