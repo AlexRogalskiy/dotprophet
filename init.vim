@@ -37,6 +37,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'metakirby5/codi.vim'
 Plug 'dkarter/bullets.vim'
+Plug 'dense-analysis/ale'
 
 call plug#end()
 
@@ -118,6 +119,7 @@ let g:airline_section_z = ' %{strftime("%-I:%M %p")}'
 let g:airline_skip_empty_sections = 1
 let g:airline#extensions#tabline#enabled = 1
 " let g:webdevicons_enable_airline_statusline = 1
+let g:airline#extensions#ale#enabled = 1
 
 " Neovim :Terminal
 tmap <Esc> <C-\><C-n>
@@ -128,8 +130,7 @@ autocmd BufLeave term://* stopinsert
 
 " bottom terminal
 function OpenBottomTerminal()
-    " don't open multiple terminals:
-    if (&buftype !=# 'terminal' && &ft !=# 'vim-plug')
+    if (&buftype !=# 'terminal' && &ft !=# 'vim-plug' && &ft !=# 'ale-fix-suggest')
         belowright split | term
         " don't highlight words in the terminal as red:
         " :syntax off
