@@ -12,6 +12,12 @@ Host zoidberg snowy infocube
 		User 2022sratna
 		ProxyCommand krssh -p "ssh -W %h:%p tj" -h %h
 
+Host director
+		User 2022sratna
+		ProxyCommand krssh -p "ssh -W %h:%p tj" -h %h
+		HostName director-app1
+		Port 4422
+
 Host gitlab.tjhsst.edu
 		User 2022sratna
 		PreferredAuthentications publickey
